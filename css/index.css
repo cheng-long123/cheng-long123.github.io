@@ -3786,7 +3786,7 @@ _:future,
   display: inline-block !important;
 }
 #nav.hide-menu #toggle-menu .site-page {
-  font-size: inherit;
+  font-size: 0.7rem;
 }
 #nav.hide-menu .menus_items {
   display: none !important;
@@ -4975,7 +4975,7 @@ img {
 #rightside {
   position: fixed;
   right: -38px;
-  bottom: 40px;
+  bottom: 100px;
   z-index: 100;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";

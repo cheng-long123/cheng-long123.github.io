@@ -8,7 +8,7 @@
 }
 
 /* 滚动条 */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
 }
@@ -38,4 +38,4 @@
 ::-moz-selection {
     color: #fff;
     background-color: #49b1f5;
-}
+} */

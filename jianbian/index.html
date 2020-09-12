@@ -1,0 +1,388 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>背景换色 | Bubble</title><meta name="description" content="@keyframes gradientBG{0%{background-position: 0% 50%;}50%{background-position: 100% 50%;}100% {background-position: 0% 50%;}}#rightside{display:none;}   这个页面是用来测试渐变背景的效果，以及不同透明度的效果。如果你有能力可以直接看 css 样式。"><meta name="author" content="Bubble"><meta name="copyright" content="Bubble"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="shortcut icon" href="/img/logo.jpg"><link rel="canonical" href="http://example.com/jianbian/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="yandex-verification" content="{&quot;theme_color&quot;:{&quot;enable&quot;:true,&quot;main&quot;:&quot;#49B1F5&quot;,&quot;paginator&quot;:&quot;#00c4b6&quot;,&quot;button_hover&quot;:&quot;#FF7242&quot;,&quot;text_selection&quot;:&quot;#00c4b6&quot;,&quot;link_color&quot;:&quot;#99a9bf&quot;,&quot;meta_color&quot;:&quot;#858585&quot;,&quot;hr_color&quot;:&quot;#A4D8FA&quot;,&quot;code_foreground&quot;:&quot;#F47466&quot;,&quot;code_background&quot;:&quot;rgba(27, 31, 35, .05)&quot;,&quot;toc_color&quot;:&quot;#00c4b6&quot;,&quot;blockquote_padding_color&quot;:&quot;#49b1f5&quot;,&quot;blockquote_background_color&quot;:&quot;#49b1f5&quot;}}"/><meta property="og:type" content="website"><meta property="og:title" content="背景换色"><meta property="og:url" content="http://example.com/jianbian/"><meta property="og:site_name" content="Bubble"><meta property="og:description" content="@keyframes gradientBG{0%{background-position: 0% 50%;}50%{background-position: 100% 50%;}100% {background-position: 0% 50%;}}#rightside{display:none;}   这个页面是用来测试渐变背景的效果，以及不同透明度的效果。如果你有能力可以直接看 css 样式。"><meta property="og:image" content="http://example.com/img/bg-1.jpg"><meta property="article:published_time" content="2020-09-05T07:24:41.000Z"><meta property="article:modified_time" content="2020-09-12T01:22:33.569Z"><meta name="twitter:card" content="summary"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.1.1',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime: '',
+  date_suffix: {"one_hour":"刚刚","hours":"小时前","day":"天前"},
+  copyright: undefined,
+  ClickShowText: {"text":"I,LOVE,YOU","fontSize":"15px"},
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: true
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+    },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2020-09-12 09:22:33'
+}</script><noscript><style type="text/css">
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+  }
+}
+
+var autoChangeMode = 'true'
+var t = saveToLocal.get('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (saveToLocal.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zyoushuo/Blog@master/hexo/css/GalMenu.css"><link rel="stylesheet" href="css/background.css"><link rel="stylesheet" href="css/jianbian.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/flink.min.css"><meta name="generator" content="Hexo 5.1.1"></head><body>
+<div id='loader'>
+    
+    <div class="loading-left-bg"></div>
+    <div class="loading-right-bg"></div>
+    <div class="spinner-box">
+        <div class="configure-border-1">
+            <div class="configure-core"></div>
+        </div>
+        <div class="configure-border-2">
+            <div class="configure-core"></div>
+        </div>
+        <div class="loading-word">加载中...</div>
+    </div>
+    
+</div>
+
+<script>
+    var endLoading = function () {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+    }
+    window.addEventListener('load', endLoading);
+</script>
+<div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">11</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">5</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">8</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 时间轴</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list animated"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/articles/"><i class="fa-fw fas fa-book"></i><span> 文章</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fa fa-book"></i><span> 好书</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/bangumis/"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 小功能</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/jianbian/"><i class="fa-fw fas fa-paint-brush"></i><span> 背景换色</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><header class="not-index-bg" id="page-header" style="background-image: url(https://pic.downk.cc/item/5f5ae8d4160a154a6735fe8e.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Bubble</a></span><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 时间轴</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list animated"></i><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/articles/"><i class="fa-fw fas fa-book"></i><span> 文章</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fa fa-book"></i><span> 好书</span></a></li><li><a class="site-page" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/bangumis/"><i class="fa-fw fab fa-youtube"></i><span> 番剧</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 小功能</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/jianbian/"><i class="fa-fw fas fa-paint-brush"></i><span> 背景换色</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="page_site-info"><h1 id="site_title">背景换色</h1></div></header><main class="layout_page" id="content-inner"><div id="page"><div id="article-container"><style>@keyframes gradientBG{0%{background-position: 0% 50%;}50%{background-position: 100% 50%;}100% {background-position: 0% 50%;}}#rightside{display:none;}</style>
+
+<blockquote>
+<p>这个页面是用来测试渐变背景的效果，以及不同透明度的效果。如果你有能力可以直接看 css 样式。否则请返回<a target="_blank" rel="noopener" href="https://www.antmoe.com/posts/7198453/index.html#%E9%99%84%E5%BD%95">Hexo 博客之 butterfly 主题优化更换背景</a>复制代码。<br>阅读体验及个标签样式请自己进行调整。</p>
+</blockquote>
+<h2 id="透明度调节"><a href="#透明度调节" class="headerlink" title="透明度调节"></a>透明度调节</h2><center style='margin-bottom:20px' id = 'opt'><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0">透明度0</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.1">透明度0.1</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.2">透明度0.2</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.3">透明度0.3</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.4">透明度0.4</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.5">透明度0.5</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.6">透明度0.6</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.7">透明度0.7</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.8">透明度0.8</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="0.9">透明度0.9</a><a style="color: #FFF;margin-bottom: 10px;"  style="color: #FFF;" href="#" class="button button-primary button-rounded button-small" data-opacity="1">透明度1</a></center>
+
+<h2 id="背景调节"><a href="#背景调节" class="headerlink" title="背景调节"></a>背景调节</h2><div id='demo_style' style='text-align:center;margin:0 auto;'>
+
+
+<h3 id="渐变类"><a href="#渐变类" class="headerlink" title="渐变类"></a>渐变类</h3><div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px;background: url(&quot;https://ae01.alicdn.com/kf/H5662031fbf344418aa2c8bf74c68826eV.png&quot;),linear-gradient(45deg, #6dd0f2 15%, #f59abe 85%);text-align: center;line-height: 200px;margin-bottom:5px;cursor: pointer;">粉蓝色有图片</div>
+
+<div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px;background: linear-gradient(45deg, #6dd0f2 15%, #f59abe 85%);text-align: center;line-height: 200px;cursor: pointer;">粉蓝色无图片</div>
+
+<div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px;background: linear-gradient(102.7deg,#fddaff 8.2%,#dfadfc 19.6%,#adcdfc 36.8%,#adfcf4 73.2%,#caf8d0 90.9%);text-align: center;line-height: 200px;cursor: pointer;">美美哒渐变</div>
+
+<div data-type="color" class='bg_test' style="display:inline-block;width: 200px;height:200px; background: linear-gradient(90deg,rgba(247,149,51,.1) 0,rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1) 100%);text-align: center;line-height: 200px;cursor: pointer;">博主同款</div>
+
+<div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px; background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);    background-size: 400% 400%;animation: gradientBG 15s ease infinite;text-align: center;line-height: 200px;cursor: pointer;">动态渐变</div>
+
+<div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px; background: linear-gradient(to right bottom, rgb(0, 255, 240), rgb(92, 159, 247) 40%, rgb(211, 34, 255) 80%);text-align: center;line-height: 200px;cursor: pointer;">紫蓝色渐变</div>
+
+<h3 id="渐变加图片类"><a href="#渐变加图片类" class="headerlink" title="渐变加图片类"></a>渐变加图片类</h3><div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px; background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png),url(https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg)0% 0% / cover;text-align: center;line-height: 200px;cursor: pointer; background-size: cover;">紫蓝色渐变</div>
+
+<h3 id="图片类"><a href="#图片类" class="headerlink" title="图片类"></a>图片类</h3><div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px; background: url(https://api.abcyun.co/api/tool/bing/token/5d8f31cf6a8ab);text-align: center;line-height: 200px;cursor: pointer; background-size: cover;">必应壁纸</div>
+
+<div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px; background: url(https://api.abcyun.co/api/others/randacgimage/token/5d8f31cf6a8ab);text-align: center;line-height: 200px;cursor: pointer; background-size: cover;">随机二次元图</div>
+
+<div data-type="photo" class='bg_test' style="display:inline-block;width: 200px;height:200px; background: url(https://api.abcyun.co/api/others/randacgblogbg/token/5d8f31cf6a8ab);text-align: center;line-height: 200px;cursor: pointer; background-size: cover;">随机二次元背景图</div>
+
+</div>
+
+<h2 id="测试文章"><a href="#测试文章" class="headerlink" title="测试文章"></a>测试文章</h2><h3 id="春"><a href="#春" class="headerlink" title="春"></a>春</h3><p>盼望着，盼望着，东风来了，春天的脚步近了。</p>
+<p>一切都像刚睡醒的样子，欣欣然张开了眼。山朗润起来了，水长起来了，太阳的脸红起来了。</p>
+<p>小草偷偷地从土里钻出来，嫩嫩的，绿绿的。园子里，田野里，瞧去，一大片一大片满是的。坐着，躺着，打两个滚，踢几脚球，赛几趟跑，捉几回迷藏。风轻悄悄的，草绵软软的。</p>
+<p>桃树、杏树、梨树，你不让我，我不让你，都开满了花赶趟儿。红的像火，粉的像霞，白的像雪。花里带着甜味，闭了眼，树上仿佛已经满是桃儿、杏儿、梨儿。花下成千成百的蜜蜂嗡嗡地闹着，大小的蝴蝶飞来飞去。野花遍地是：杂样儿，有名字的，没名字的，散在花丛里，像眼睛，像星星，还眨呀眨的。</p>
+<p>“吹面不寒杨柳风”，不错的，像母亲的手抚摸着你。风里带来些新翻的泥土的气息，混着青草味，还有各种花的香，都在微微润湿的空气里酝酿。鸟儿将窠巢安在繁花嫩叶当中，高兴起来了，呼朋引伴地卖弄清脆的喉咙，唱出宛转的曲子，与轻风流水应和着。牛背上牧童的短笛，这时候也成天在嘹亮地响。</p>
+<p>雨是最寻常的，一下就是三两天。可别恼。看，像牛毛，像花针，像细丝，密密地斜织着，人家屋顶上全笼着一层薄烟。树叶子却绿得发亮，小草也青得逼你的眼。傍晚时候，上灯了，一点点黄晕的光，烘托出一片这安静而和平的夜。乡下去，小路上，石桥边，撑起伞慢慢走着的人;还有地里工作的农夫，披着蓑，戴着笠的。他们的草屋，稀稀疏疏的在雨里静默着。</p>
+<p>天上风筝渐渐多了，地上孩子也多了。城里乡下，家家户户，老老小小，他们也赶趟儿似的，一个个都出来了。舒活舒活筋骨，抖擞抖擞精神，各做各的一份事去，“一年之计在于春”;刚起头儿，有的是工夫，有的是希望。</p>
+<p>春天像刚落地的娃娃，从头到脚都是新的，它生长着。</p>
+<p>春天像小姑娘，花枝招展的，笑着，走着。</p>
+<p>春天像健壮的青年，有铁一般的胳膊和腰脚，他领着我们上前去。</p>
+<ol>
+<li>有序列表</li>
+<li>有序</li>
+<li>有</li>
+</ol>
+<ul>
+<li>无需列表</li>
+<li>测试</li>
+</ul>
+<div class="note default icon"><p>default</p>
+</div>
+
+<div class="note primary icon"><p>primary</p>
+</div>
+
+<div class="note success icon"><p>success</p>
+</div>
+
+<div class="note info icon"><p>info</p>
+</div>
+
+<div class="note warning icon"><p>warning</p>
+</div>
+
+<div class="note danger icon"><p>danger</p>
+</div>
+
+<div class="note primary no-icon"><h4 id="Primary-HeaderWelcome-to-Hexo"><a href="#Primary-HeaderWelcome-to-Hexo" class="headerlink" title="Primary HeaderWelcome to Hexo!"></a>Primary Header<strong>Welcome</strong> to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo!</a></h4></div>
+
+
+<script>var article_container=document.getElementById("demo_style"),opt=document.getElementById("opt");article_container.addEventListener("click",function(e){var t=e.target;"DIV"===t.nodeName&&"bg_test"===t.className&&(web_bg.style.background=t.style.background,web_bg.style.animation=t.style.animation),Cookies.set("bg",t.style.background,{expires:1}),Cookies.set("animation",t.style.animation,{expires:1}),Cookies.set("type",t.getAttribute("data-type"),{expires:1})}),opt.addEventListener("click",function(e){var t=e.target;if("A"===t.nodeName){var a=t.getAttribute("data-opacity");if(a){Cookies.set("opacity",a,{expires:1});var n="--light_bg_color: rgb(255, 255, 255,"+a+");",i="--dark_bg_color: rgba(18,18,18,"+a+");";document.getElementById("content-inner").setAttribute("style",n+i)}}e.preventDefault()});</script></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div class="comment-switch"><span class="first-comment">Valine</span><label><input id="switch-comments-btn" type="checkbox"/><span class="slider"></span></label><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="disqus_thread"></div></div></div></div></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Bubble</div><div class="author-info__description">生命不止，奋斗不息</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length_num">11</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length_num">5</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length_num">8</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/cheng-long123"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/cheng-long123" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:cheng1760016317@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="sticky_layout"><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content"><img src="https://cdn.jsdelivr.net/gh/lete114/CDN/Use/my_bg.gif"></div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/09/10/promise/" title="Promise"><img data-lazy-src="https://p.ananas.chaoxing.com/star3/origin/42cd5a6514ca98e18315d268cb3d794b.jpg?rw=1920&amp;rh=1080&amp;_fileSize=260708&amp;_orientation=1" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Promise"/></a><div class="content"><a class="title" href="/2020/09/10/promise/" title="Promise">Promise</a><time datetime="2020-09-10T00:48:22.136Z" title="发表于 2020-09-10 08:48:22">2020-09-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/07/23/html2020md/" title="html面试题"><img data-lazy-src="https://p.ananas.chaoxing.com/star3/origin/f836d2ac9abfb6e6b966fe78412e02ce.jpg?rw=2048&amp;rh=1365&amp;_fileSize=268371&amp;_orientation=1" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="html面试题"/></a><div class="content"><a class="title" href="/2020/07/23/html2020md/" title="html面试题">html面试题</a><time datetime="2020-07-22T16:00:00.000Z" title="发表于 2020-07-23 00:00:00">2020-07-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/07/23/vue2020ms1/" title="vue面试题(一)"><img data-lazy-src="https://p.ananas.chaoxing.com/star3/origin/b5ccb7f9ee60fab2dfba37cabf4e9706.jpg?rw=1852&amp;rh=1042&amp;_fileSize=161784&amp;_orientation=1" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue面试题(一)"/></a><div class="content"><a class="title" href="/2020/07/23/vue2020ms1/" title="vue面试题(一)">vue面试题(一)</a><time datetime="2020-07-22T16:00:00.000Z" title="发表于 2020-07-23 00:00:00">2020-07-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/07/23/css2020ms/" title="css面试题"><img data-lazy-src="https://p.ananas.chaoxing.com/star3/origin/1ecd348801b29d62c153ad2f0262ba01.jpg?rw=2048&amp;rh=1365&amp;_fileSize=231239&amp;_orientation=1" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="css面试题"/></a><div class="content"><a class="title" href="/2020/07/23/css2020ms/" title="css面试题">css面试题</a><time datetime="2020-07-22T16:00:00.000Z" title="发表于 2020-07-23 00:00:00">2020-07-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/07/23/js2020ms/" title="js面试题"><img data-lazy-src="https://p.ananas.chaoxing.com/star3/origin/88067b872c1a292a5da9f65e8cf2d436.jpg?rw=1920&amp;rh=1080&amp;_fileSize=68370&amp;_orientation=1" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="js面试题"/></a><div class="content"><a class="title" href="/2020/07/23/js2020ms/" title="js面试题">js面试题</a><time datetime="2020-07-22T16:00:00.000Z" title="发表于 2020-07-23 00:00:00">2020-07-23</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/web/"><span class="card-category-list-name">web</span><span class="card-category-list-count">10</span></a></li><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/web/HTML/"><span class="card-category-list-name">HTML</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/web/Vue/"><span class="card-category-list-name">Vue</span><span class="card-category-list-count">2</span></a></li><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/web/Vue/promise/"><span class="card-category-list-name">promise</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/web/Vue/%E9%9D%A2%E8%AF%95/"><span class="card-category-list-name">面试</span><span class="card-category-list-count">1</span></a></li></ul><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/web/%E9%9D%A2%E8%AF%95/"><span class="card-category-list-name">面试</span><span class="card-category-list-count">4</span></a></li><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/web/%E9%9D%A2%E8%AF%95/CSS/"><span class="card-category-list-name">CSS</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/web/%E9%9D%A2%E8%AF%95/JavaScript/"><span class="card-category-list-name">JavaScript</span><span class="card-category-list-count">1</span></a></li></ul></ul>
+            
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/css/" style="font-size: 1.3em; color: #99a1ac">css</a> <a href="/tags/html/" style="font-size: 1.3em; color: #99a1ac">html</a> <a href="/tags/javaScript/" style="font-size: 1.1em; color: #999">javaScript</a> <a href="/tags/javascript/" style="font-size: 1.5em; color: #99a9bf">javascript</a> <a href="/tags/vue/" style="font-size: 1.1em; color: #999">vue</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/09/"><span class="card-archive-list-date">九月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/07/"><span class="card-archive-list-date">七月 2020</span><span class="card-archive-list-count">10</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">11</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2020-09-12T02:36:34.367Z"></div></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://pic.downk.cc/item/5f5ae8d4160a154a6735fe8e.jpg)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2020  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Bubble</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">我相信我可以，但我一直在路上，所以我有无限的可能！！</div><div class="icp"><a><img class="icp-icon" src="/img/icp.png"/><span></span></a></div></div><div id="running-time"><script>setInterval(()=>{let create_time=Math.round(new Date(Date.UTC(2020,01,03,0,0,0)).getTime()/1000);let timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);let second=timestamp-create_time;let time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600;}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600;}if(second>=3600){time[2]=parseInt(second/3600);second%=3600;}if(second>=60){time[3]=parseInt(second/60);second%=60;}if(second>0){time[4]=second;}currentTimeHtml='本站已安全运行 '+time[0]+' 年 '+time[1]+' 天 '+time[2]+' 时 '+time[3]+' 分 '+time[4]+' 秒';document.getElementById("running-time").innerHTML=currentTimeHtml;},1000);
+<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></head></script></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.spacingElementById('content-inner')
+  else {
+    $.getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js', () => {
+      pangu.spacingElementById('content-inner')
+    })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguFn)</script><script src="/js/search/local-search.js"></script><script>var endLoading = function () {
+  document.body.style.overflow = 'auto';
+  document.getElementById('loading-box').classList.add("loaded")
+}
+window.addEventListener('load',endLoading)</script><div class="js-pjax"><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    $.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js', function () {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      true && mermaid.init()
+    })
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    window.valine = new Valine({
+      el: '#vcomment',
+      appId: 'ybhJ9PRkKn4TNp1Aazo3rPzA-gzGzoHsz',
+      appKey: 'RV5MOnLiGIhvupwpe0u6D3SI',
+      placeholder: '📌昵称可以填写QQ号来自动补全QQ信息啦~\r👨‍🔧本站已启用Akismet反垃圾评论~\r🚀评论和回复支持M↓~',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+    });
+    if ('nick,mail') { valine.config.requiredFields= 'nick,mail'.split(',') }
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else $.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js', initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.querySelector('#vcomment'),loadValine)
+  else setTimeout(() => loadValine(), 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'http://example.com/jianbian/index.html'
+    this.page.identifier = 'jianbian/index.html'
+    this.page.title = '背景换色'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+}
+
+if ('Valine' === 'Disqus' || !true) {
+  if (true) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="https://cdn.jsdelivr.net/gh/lete114/CDN/js/upjiang.js"></script><script src="/live2d-widget/autoload.js"></script><script src="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/js/circleMagic.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zyoushuo/Blog@latest/hexo/css/loading_style_1.css" ><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zyoushuo/Blog@latest/hexo/css/loading_style_2.css" ><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zyoushuo/Blog@master/hexo/css/GalMenu.css"><script src="https://myhkw.cn/player/js/player.js" id="myhk" key="159935113525" m="1"></script><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/js/mouse_snow.min.js"></script><script src="./source./js/third-party/fish.js"></script><script src="./themes/butterfly/source/js/calendar.js"></script><script src="./themes/butterfly/source/js/calendar2.js"></script><script src="./source./js/xkTool.js"></script><script src="./source./js/snbg.js"></script><script src="./source/js/jianbian.js"></script><script src="/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="/js/third-party/click_heart.js" async="async"></script><script src="/js/third-party/ClickShowText.js" async="async"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  'meta[name=description]',
+  '#config_change',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  $('script[data-pjax]').each(function () {
+    $(this).parent().append($(this).remove())
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  if (typeof gtag === 'function') {
+    gtag('config', '', {'page_path': window.location.pathname});
+  }
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+
+document.addEventListener('pjax:send', function () {
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  $(window).off('scroll')
+
+  //reset readmode
+  $('body').hasClass('read-mode') && $('body').removeClass('read-mode')
+
+})</script></div><link rel="stylesheet" href="APlayer.min.css"><div id="aplayer"></div><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js" async></script></body></html>
